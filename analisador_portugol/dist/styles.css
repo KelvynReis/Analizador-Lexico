@@ -3,38 +3,10 @@
     padding:0;
     box-sizing: border-box;
 }
-
-.content{
-    width:100vw;    
-    flex: 1;
-    overflow: auto;
-    display:flex;
-
-}
-
-.content textarea{
-    flex:1;
-    height:100%;
-    border:none;
-    resize:none;
-    background: none;
-    color:#fff;
-}
-textarea{
-    font-size:24px;
-    padding:16px;
-    outline:none;
-
-}
-
-textarea::placeholder{
-    color:#E4E3D3;
-}
-
 html,body{
     width:100vw;
     height:100vh;
-    background-color: #2E2D4D;
+    background-color: #555c5b;
 }
 
 body{
@@ -43,6 +15,48 @@ body{
     overflow:hidden
 }
 
+header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+}
+
+header h1{
+    font-size: 2rem;
+    color: black;
+    font-weight: bold;
+}
+.content{
+    width:100vw;
+    height: 100vh;
+    overflow: auto;
+    display:flex;
+    justify-content: center;
+}
+
+.content textarea{
+    width: 50%;
+    height:100%;
+    border:none;
+    resize:none;
+    background: none;
+    color:#fff;
+}
+textarea{
+    font-size:24px;
+    padding: 20px;
+    outline:none;
+
+}
+
+textarea::placeholder{
+    color:#E4E3D3;
+}
+
+
+
 .table-container{
     overflow: auto;
 }
@@ -50,7 +64,7 @@ body{
 button{
     height:48px;
     width:100px;
-    background: #F0386B;
+    background: #27328d;
     border:none;
     border-radius: 10px;
     margin:16px;
@@ -67,8 +81,9 @@ button:hover{
 table{
     min-width: 300px;
     height:100%;
-    border:1px solid #fff;
-    color:#fff;
+    border:2px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    color:rgb(0, 0, 0);
 }
 
 table thead{
