@@ -36,7 +36,6 @@ const operators = [
 
 
 
-
 function checkToken(current_token, trail) {
   let newCurrentToken = {}
   const char = current_token.toUpperCase()
@@ -110,8 +109,6 @@ function insertTable(id, token_type) {
       break;
   }
   return { token: token, lexema: id, descrição: token_type }
-  // cvsFile += `${token};\t ${id};\t ${token_type}\n`;
-
 }
 
 function is_space(char) {
@@ -155,8 +152,6 @@ function is_number(char) {
   var open_quotes = false;
   var type_open_quotes = ""
   var backslash = true;
-  // if (current_token = '')
-  // checkToken(current_token);
   for (let char of program) {
     if (open_quotes) {
       current_token.char += char;
