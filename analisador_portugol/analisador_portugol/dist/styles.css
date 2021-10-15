@@ -1,0 +1,76 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.content{
+    width:100vw;    
+    flex: 1;
+    overflow: auto;
+    display:flex;
+
+}
+
+.content textarea{
+    flex:1;
+    height:100%;
+    border:none;
+    resize:none;
+    background: none;
+    color:#fff;
+}
+textarea{
+    font-size:24px;
+    padding:16px;
+    outline:none;
+
+}
+
+textarea::placeholder{
+    color:#E4E3D3;
+}
+
+html,body{
+    width:100vw;
+    height:100vh;
+    background-color: #2E2D4D;
+}
+
+body{
+    display:flex;
+    flex-direction: column;
+    overflow:hidden
+}
+
+.table-container{
+    overflow: auto;
+}
+
+button{
+    height:48px;
+    width:100px;
+    background: #F0386B;
+    border:none;
+    border-radius: 10px;
+    margin:16px;
+    color:#fff;
+    cursor:pointer;
+    min-height: 48px;
+    transition: opacity 0.2s linear;
+}
+
+button:hover{
+    opacity: 0.7;
+}
+
+table{
+    min-width: 300px;
+    height:100%;
+    border:1px solid #fff;
+    color:#fff;
+}
+
+table thead{
+    font-size:24px;
+}
